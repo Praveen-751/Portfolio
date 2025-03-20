@@ -2,29 +2,27 @@ import React from "react";
 import "./main.css"; // Add custom styles here
 
 const Main = () => {
-    return (
+return (
         <div className="home-container">
-            <header className="header">
-                <h1 className="title">Welcome to My Portfolio</h1>
-                <p className="subtitle">Creative Developer | Designer | Innovator</p>
-                <nav className="nav">
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#contact">Contact</a>
-                </nav>
-            </header>
-
-            <section id="about" className="section">
-                <h2>About Me</h2>
-                <p>
-                    Hi, I'm a passionate developer with a knack for creating beautiful
-                    and functional web applications. I love solving problems and bringing
-                    ideas to life.
-                </p>
+            <section id="about" className="section about-section">
+                <div className="about-content">
+                    <div className="about-image">
+                        <img src="your-image.jpg" alt="Praveen Kumar Chinnamshetty" />
+                    </div>
+                    <div className="about-info">
+                        <h2>Praveen Kumar Chinnamshetty</h2>
+                        <p>
+                            Hi, I'm a passionate developer with a knack for creating beautiful
+                            and functional web applications. I love solving problems and bringing
+                            ideas to life.
+                        </p>
+                    </div>
+                </div>
             </section>
+        </div>
+    );
 
-            <section id="projects" className="section">
+            {/* <section id="projects" className="section">
                 <h2>Projects</h2>
                 <div className="projects-grid">
                     <div className="project-card">
@@ -60,9 +58,9 @@ const Main = () => {
 
             <footer className="footer">
                 <p>&copy; 2023 Your Name. All rights reserved.</p>
-            </footer>
-        </div>
-    );
+            </footer> */}
+        // </div>
+    // );
 };
 
 export default Main;

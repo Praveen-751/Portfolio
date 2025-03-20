@@ -1,0 +1,75 @@
+
+/* Neon Cyberpunk (Bold & Eye-catching) */
+/* Primary: #1A1A2E (Deep Navy)
+Secondary: #16213E (Dark Blue)
+Accent: #0F3460 (Electric Indigo)  
+Highlight: #E94560 (Neon Pink)
+Text: #F5F5F5 (Bright White) */
+
+/* Theme Colors */
+:root {
+    --primary-color: #1A1A2E;
+    /* Deep Navy */
+    --secondary-color: #16213E;
+    /* Dark Blue */
+    --accent-color: #0F3460;
+    /* Electric Indigo */
+    --highlight-color: #E94560;
+    /* Neon Pink */
+    --text-color: #F5F5F5;
+    /* Bright White */
+}
+
+/* General Styles */
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--highlight-color);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--highlight-color);
+}
+
+/* About Section */
+.about-section {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.about-image img {
+    border: 4px solid var(--highlight-color);
+}
+
+.about-info h2 {
+    color: var(--highlight-color);
+}
+
+.about-info p {
+    color: var(--text-color);
+}
+
+/* 2. Soft Pastel (Minimal & Elegant)
+Primary: #F7EDE2 (Peach)
+Secondary: #FEC89A (Coral)
+Accent: #9B2226 (Deep Red)
+Highlight: #D62828 (Brick Red)
+Text: #3D405B (Muted Navy) */

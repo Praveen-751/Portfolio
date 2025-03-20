@@ -3,38 +3,40 @@
 import React, { useState, useEffect } from "react";
 import Main from "@/components/main";
 import Intro from "@/components/Introduction";
+import Header from "@/components/header";
 
 export default function Home() {
-  const [scrollY, setScrollY] = useState(0);
-  const [showHeader, setShowHeader] = useState(false);
+  // const [scrollY, setScrollY] = useState(0);
+  // const [showHeader, setShowHeader] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-      if (window.scrollY > window.innerHeight) {
-        setShowHeader(true);
-      } else {
-        setShowHeader(false);
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setScrollY(window.scrollY);
+  //     if (window.scrollY > window.innerHeight) {
+  //       setShowHeader(true);
+  //     } else {
+  //       setShowHeader(false);
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
-  const headerOpacity = Math.min(1, scrollY / window.innerHeight); // Header opacity increases
+  // const headerOpacity = Math.min(1, scrollY / window.innerHeight); // Header opacity increases
 
   return (
     <div>
-      {showHeader && (
+      {/* {showHeader && (
         <div
           className="header"
           style={{ opacity: headerOpacity }}
         >
           <h1>My Portfolio</h1>
         </div>
-      )}
-      <Intro scrollY={scrollY} />
+      )} */}
+      {/* <Intro scrollY={scrollY} /> */}
+      <Header />
       <Main />
     </div>
   );
