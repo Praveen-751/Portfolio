@@ -29,7 +29,7 @@
 }
 
 .about-image img {
-  width: 30%;
+  width: clamp(150px, 20vw, 300px);
   height: 60%;
   border-radius: 10% 5% 10% 5%;
   object-fit: cover;
@@ -38,7 +38,12 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Adjustments for 1200px and above */
+@media (max-width: 600px) {
+    .about-image img {
+        width: clamp(100px, 30vw, 200px); /* Smaller scaling for smaller screens */
+    }
+}
+/* Adjustments for 1200px and above
 @media (min-width: 1200px) {
   .about-image img {
     width: 25%;
@@ -47,35 +52,32 @@
 }
 
 /* Adjustments for 900px to 1199px */
-@media (max-width: 1199px) and (min-width: 900px) {
+/* @media (max-width: 1199px) and (min-width: 900px) {
   .about-image img {
     width: 35%;
     height: 55%;
   }
-}
+} */
 
 /* Adjustments for 600px to 899px */
-@media (max-width: 899px) and (min-width: 600px) {
+/* @media (max-width: 899px) and (min-width: 600px) {
   .about-image img {
     width: 40%;
     height: 50%;
   }
-}
+} */
 
 /* Adjustments for 300px to 599px */
-@media (max-width: 599px) and (min-width: 300px) {
+/* @media (max-width: 599px) and (min-width: 300px) {
   .about-image img {
     width: 50%;
     height: 45%;
   }
-}
+} */ 
 
 /* Adjustments for below 300px */
-@media (max-width: 299px) {
-  .about-image img {
-    width: 90%;
-    height: 90%;
-  }
+/* @media (max-width: 299px) {
+
 
   .about-info h2 {
     font-size: 1rem;
@@ -86,7 +88,7 @@
     font-size: 0.6rem;
     line-height: 0.4;
   }
-}
+} */
 
 .about-info h2 {
   color: var(--text-color);

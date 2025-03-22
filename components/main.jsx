@@ -3,24 +3,27 @@ import "./main.css"; // Add custom styles here
 
 const Main = () => {
 return (
-        <div className="home-container">
-            <section id="about" className="section about-section">
-                <div className="about-content">
-                    <div className="about-image">
-                        <img src="your-image.jpg" alt="Praveen Kumar Chinnamshetty" />
-                    </div>
-                    <div className="about-info">
-                        <h2>Praveen Kumar Chinnamshetty</h2>
-                        <p>
-                            Hi, I'm a passionate developer with a knack for creating beautiful
-                            and functional web applications. I love solving problems and bringing
-                            ideas to life.
-                        </p>
-                    </div>
-                </div>
-            </section>
+  <div className="home-container">
+    <section id="about" className="section about-section">
+      <div className="about-content">
+        <div className="about-image">
+          <img
+            src="img.png"
+            alt="Praveen Kumar Chinnamshetty"
+          />
         </div>
-    );
+        <div className="about-info">
+          <h2>Praveen Kumar Chinnamshetty</h2>
+          <p>
+            Hi, I'm a passionate developer with a knack for creating beautiful
+            and functional web applications. I love solving problems and
+            bringing ideas to life.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+);
 
             {/* <section id="projects" className="section">
                 <h2>Projects</h2>
