@@ -8,4 +8,4 @@ const nextConfig = {
   assetPrefix: "/Portfolio",
 };
 
-export default nextConfig;
+module.exports = nextConfig;
