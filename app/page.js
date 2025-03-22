@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Main from "@/components/main";
 import Intro from "@/components/Introduction";
 import Header from "@/components/header";
+import "../assets/styles.css";
 
 export default function Home() {
   // const [scrollY, setScrollY] = useState(0);
