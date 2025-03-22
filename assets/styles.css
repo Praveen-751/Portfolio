@@ -9,6 +9,7 @@ Text: #F5F5F5 (Bright White) */
 /* Theme Colors */
 :root {
     --primary-color: #7510f7;
+    /* #8f47ec */
     /* Deep Navy */
     --secondary-color: #ffffff;
     /* Dark Blue */
@@ -67,9 +68,20 @@ a:hover {
     color: var(--text-color);
 }
 
-/* 2. Soft Pastel (Minimal & Elegant)
-Primary: #F7EDE2 (Peach)
-Secondary: #FEC89A (Coral)
-Accent: #9B2226 (Deep Red)
-Highlight: #D62828 (Brick Red)
-Text: #3D405B (Muted Navy) */
+/* Scrollable container */
+.scroll-container {
+    height: 100vh; /* Full viewport height */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Hide the vertical scrollbar */
+.scroll-container::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar width */
+}
+
+.scroll-container {
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
