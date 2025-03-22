@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build and export
+      - name: Build static site
         run: npm run deploy
 
       - name: Deploy to GitHub Pages
