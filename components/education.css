@@ -1,0 +1,73 @@
+/* Main container for the edu section */
+.edu-main {
+  padding: 2rem;
+  background-color: var(--secondary-color); /* Dark Blue */
+  color: var(--text-color); /* Bright White */
+}
+
+/* Flexbox layout for the sections */
+.edu-sections {
+  display: flex;
+  flex-direction: column; /* Stack sections vertically */
+  gap: 2rem; /* Add spacing between sections */
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Individual section styling */
+.edu-sections {
+  padding: 1rem; /* Reduce padding to decrease height */
+  border-radius: 16px;
+  background-color: var(--primary-color);
+  height: 92vh; /* Default height based on content */
+  min-height: 150px; /* Optional: Set a minimum height */
+}
+
+/* Specific styles for each section */
+.education,
+.experience,
+.certifications {
+  height: 90%;
+  min-width: 30%;
+  background-color: #fff; /* Set a specific height for the education section */
+  border-radius: 10% 5%;
+  /* box-shadow: 10px 5px var(--accent-color);  */
+  border: 2px var(--primary-color) solid;
+}
+
+.content-inside {
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+}
+
+.content-inside h2 {
+  font-size: 1.8rem;
+  color: var(--highlight-color); /* Neon Pink */
+  margin-bottom: 1rem;
+}
+
+.content-inside p {
+  font-size: 1.2rem;
+  color:
+   var(--text-color); /* Bright White */
+}
+
+/* Responsive layout for larger screens */
+@media (min-width: 768px) {
+  .edu-sections {
+    flex-direction: row; /* Arrange sections side by side */
+    justify-content: space-around;
+  }
+
+  .edu-sections {
+    flex: 1; /* Make sections equal width */
+    margin: 0 1rem; /* Add spacing between sections */
+  }
+}
+
+.icons{
+  height: 48px;
+  width: 48px;
+  margin: 0 1rem;
+}

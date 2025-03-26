@@ -1,91 +1,10 @@
 /* About Section */
-.about-section {
-  background-color: var(--secondary-color);
-  /* Dark Blue */
-  width: 100vw;
-  height: 89vh;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  color: var(--text-color);
-  /* Bright White */
-}
 
-.about-content {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: center;
-  justify-content: center;
-}
-
-.about-image img {
-  width: 100%;
-  max-width: 300px; /* Maximum width for larger screens */
-  height: auto; /* Maintain aspect ratio */
-  max-height: 60vh; /* Adjust based on viewport height */
-  border-radius: 10% 5% 10% 5%;
-  object-fit: cover;
+.main-container{
+  height: max-content;
+  width: 99vw;
   display: flex;
-  border: 4px solid var(--accent-color);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 600px) {
-  .about-image img {
-    max-width: 200px; /* Smaller max width for smaller screens */
-    max-height: 40vh; /* Adjust height for smaller screens */
-  }
-}
-
-@media (min-width: 1200px) {
-  .about-image img {
-    max-width: 400px; /* Larger max width for larger screens */
-    max-height: 70vh; /* Adjust height for larger screens */
-  }
-}
-
-
-.about-info h2 {
-  color: var(--text-color);
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.about-info p {
-  color: var(--text-color);
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
-
-@media (max-width: 768px) {
-  .about-content {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    /* Single column layout */
-  }
-
-    .about-info h2 {
-    font-size: 1.5rem; /* Smaller font size for smaller screens */
-  }
-
-  .about-info p {
-    font-size: 1rem; /* Smaller font size for smaller screens */
-  }
-
-}
-
-
-@media (max-width: 480px) {
-  .about-info h2 {
-    font-size: 1.2rem; /* Even smaller font size for very small screens */
-  }
-
-  .about-info p {
-    font-size: 0.9rem; /* Even smaller font size for very small screens */
-  }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
