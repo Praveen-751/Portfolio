@@ -8,7 +8,7 @@ const Header = () => {
     // Check screen width on load and resize
     useEffect(() => {
         const checkScreenWidth = () => {
-            setIsSmallScreen(window.innerWidth < 300);
+            setIsSmallScreen(window.innerWidth < 600);
         };
 
         checkScreenWidth(); // Initial check

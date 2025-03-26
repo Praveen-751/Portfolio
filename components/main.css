@@ -21,16 +21,11 @@
   justify-content: center;
 }
 
-.about-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
 .about-image img {
-  width: clamp(150px, 20vw, 300px);
-  height: 60%;
+  width: 100%;
+  max-width: 300px; /* Maximum width for larger screens */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 60vh; /* Adjust based on viewport height */
   border-radius: 10% 5% 10% 5%;
   object-fit: cover;
   display: flex;
@@ -39,56 +34,19 @@
 }
 
 @media (max-width: 600px) {
-    .about-image img {
-        width: clamp(100px, 30vw, 200px); /* Smaller scaling for smaller screens */
-    }
+  .about-image img {
+    max-width: 200px; /* Smaller max width for smaller screens */
+    max-height: 40vh; /* Adjust height for smaller screens */
+  }
 }
-/* Adjustments for 1200px and above
+
 @media (min-width: 1200px) {
   .about-image img {
-    width: 25%;
-    height: 50%;
+    max-width: 400px; /* Larger max width for larger screens */
+    max-height: 70vh; /* Adjust height for larger screens */
   }
 }
 
-/* Adjustments for 900px to 1199px */
-/* @media (max-width: 1199px) and (min-width: 900px) {
-  .about-image img {
-    width: 35%;
-    height: 55%;
-  }
-} */
-
-/* Adjustments for 600px to 899px */
-/* @media (max-width: 899px) and (min-width: 600px) {
-  .about-image img {
-    width: 40%;
-    height: 50%;
-  }
-} */
-
-/* Adjustments for 300px to 599px */
-/* @media (max-width: 599px) and (min-width: 300px) {
-  .about-image img {
-    width: 50%;
-    height: 45%;
-  }
-} */ 
-
-/* Adjustments for below 300px */
-/* @media (max-width: 299px) {
-
-
-  .about-info h2 {
-    font-size: 1rem;
-    margin-bottom: 0.2rem;
-  }
-
-  .about-info p {
-    font-size: 0.6rem;
-    line-height: 0.4;
-  }
-} */
 
 .about-info h2 {
   color: var(--text-color);
@@ -106,7 +64,28 @@
   .about-content {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
     /* Single column layout */
   }
 
+    .about-info h2 {
+    font-size: 1.5rem; /* Smaller font size for smaller screens */
+  }
+
+  .about-info p {
+    font-size: 1rem; /* Smaller font size for smaller screens */
+  }
+
+}
+
+
+@media (max-width: 480px) {
+  .about-info h2 {
+    font-size: 1.2rem; /* Even smaller font size for very small screens */
+  }
+
+  .about-info p {
+    font-size: 0.9rem; /* Even smaller font size for very small screens */
+  }
 }
