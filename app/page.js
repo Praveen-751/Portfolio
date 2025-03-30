@@ -7,7 +7,7 @@ import "../assets/styles.css";
 
 export default function Home() {
   return (
-    <div className="scroll-container">
+    <div className="scroll-container" style={{position: "relative"}}>
       <Header />
       <Main />
       {/* <About /> */}

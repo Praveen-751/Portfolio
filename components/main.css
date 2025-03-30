@@ -1,10 +1,16 @@
 /* About Section */
 
 .main-container{
-  height: max-content;
-  width: 99vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 90%;
+  width: 100%;
+}
+
+.home-container{
+  height: 100%;
+  width: 100%;
+}
+
+.section{
+  height: 100%;
+  width: 100%;
 }

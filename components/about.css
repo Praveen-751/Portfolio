@@ -1,14 +1,4 @@
-.about-section {
-  background-color: var(--secondary-color);
-  /* Dark Blue */
-  width: 100vw;
-  height: 89vh;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  color: var(--text-color);
-  /* Bright White */
-}
+
 
 .about-content {
   width: 100%;
@@ -64,14 +54,16 @@
   .about-content {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    padding: 10px;
+    padding: 20px;
     gap: 0rem;
     /* Single column layout */
   }
 
-    .about-info h2 {
+  .about-info{
+    text-align: center;
+  }
+
+  .about-info h2 {
     font-size: 1.5rem; /* Smaller font size for smaller screens */
   }
 
@@ -87,7 +79,35 @@
     font-size: 1.2rem; /* Even smaller font size for very small screens */
   }
 
+  .about-info{
+  text-align: center;
+  }
+
+
   .about-info p {
     font-size: 0.9rem; /* Even smaller font size for very small screens */
+  }
+}
+
+
+@media (min-height: 800px) and (max-width: 480px) {
+  .about-content {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 2rem;
+    /* Two column layout */
+  }
+
+  .about-image img {
+    max-width: 300px; /* Larger max width for larger screens */
+    max-height: 60vh; /* Adjust height for larger screens */
+  }
+  .about-info h2 {
+    font-size: 2rem; /* Larger font size for larger screens */
+  }
+
+  .about-info p {
+    font-size: 1.2rem; /* Larger font size for larger screens */
   }
 }

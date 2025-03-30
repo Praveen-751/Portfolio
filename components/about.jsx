@@ -1,8 +1,8 @@
 import React from "react";
+import "./about.css"; // Add a CSS file for styling
 
 const About = () => {
   return (
-    <section id="main" className="section about-section">
       <div className="about-content">
         <div className="about-image">
           <img src="img.png" alt="Praveen Kumar Chinnamshetty" />
@@ -16,6 +16,7 @@ const About = () => {
           </p>
         </div>
       </div>
-    </section>
   );
 };
+
+export default About;

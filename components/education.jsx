@@ -1,7 +1,7 @@
 import React from "react";
 import "./education.css"; // Add a CSS file for styling
 
-const About = () => {
+const Education = () => {
   return (
     <div className="edu-main">
       <div className="edu-sections">
@@ -29,4 +29,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Education;
