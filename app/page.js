@@ -2,7 +2,8 @@
 
 import Main from "@/components/main";
 import Header from "@/components/header";
-import "../assets/styles.css";
+// import './globals.css';
+// import "../assets/styles.css";
 
 export default function Home() {
   return (
