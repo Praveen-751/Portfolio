@@ -6,7 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "build:prod": "cross-env NODE_ENV=production next build && next export",
+    "build:prod": "cross-env NODE_ENV=production next build",
     "lint": "next lint",
     "deploy": "next build"
   },
