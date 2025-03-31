@@ -3,29 +3,19 @@ import "./about.css"; // Add a CSS file for styling
 
 const About = () => {
   return (
-    <div className="about-main">
-      <div className="about-sections">
-        <section className="education">
-            <div className="content-inside">
-            <img className="icons" src="icons/edu.svg" alt="svg icon"/>
-            <h2>Education</h2>
-            <p>Details about your education go here.</p>
-          </div>
-        </section>
-        <section className="experience">
-          <div className="content-inside">
-            <h2>Professional Experience</h2>
-            <p>Details about your professional experience go here.</p>
-          </div>
-        </section>
-        <section className="certifications">
-          <div className="content-inside">
-            <h2>Certifications</h2>
-            <p>Details about your certifications go here.</p>
-          </div>
-        </section>
+      <div className="about-content">
+        <div className="about-image">
+          <img src="img.png" alt="Praveen Kumar Chinnamshetty" />
+        </div>
+        <div className="about-info">
+          <h2>Praveen Kumar Chinnamshetty</h2>
+          <p>
+            Hi, I'm a passionate developer with a knack for creating beautiful
+            and functional web applications. I love solving problems and
+            bringing ideas to life.
+          </p>
+        </div>
       </div>
-    </div>
   );
 };
 

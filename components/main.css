@@ -1,112 +1,15 @@
 /* About Section */
-.about-section {
-  background-color: var(--secondary-color);
-  /* Dark Blue */
-  width: 100vw;
-  height: 89vh;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  color: var(--text-color);
-  /* Bright White */
-}
 
-.about-content {
+.main-container{
+  height: 90%;
   width: 100%;
+}
+
+.home-container{
   height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
 }
 
-.about-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.about-image img {
-  width: clamp(150px, 20vw, 300px);
-  height: 60%;
-  border-radius: 10% 5% 10% 5%;
-  object-fit: cover;
-  display: flex;
-  border: 4px solid var(--accent-color);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 600px) {
-    .about-image img {
-        width: clamp(100px, 30vw, 200px); /* Smaller scaling for smaller screens */
-    }
-}
-/* Adjustments for 1200px and above
-@media (min-width: 1200px) {
-  .about-image img {
-    width: 25%;
-    height: 50%;
-  }
-}
-
-/* Adjustments for 900px to 1199px */
-/* @media (max-width: 1199px) and (min-width: 900px) {
-  .about-image img {
-    width: 35%;
-    height: 55%;
-  }
-} */
-
-/* Adjustments for 600px to 899px */
-/* @media (max-width: 899px) and (min-width: 600px) {
-  .about-image img {
-    width: 40%;
-    height: 50%;
-  }
-} */
-
-/* Adjustments for 300px to 599px */
-/* @media (max-width: 599px) and (min-width: 300px) {
-  .about-image img {
-    width: 50%;
-    height: 45%;
-  }
-} */ 
-
-/* Adjustments for below 300px */
-/* @media (max-width: 299px) {
-
-
-  .about-info h2 {
-    font-size: 1rem;
-    margin-bottom: 0.2rem;
-  }
-
-  .about-info p {
-    font-size: 0.6rem;
-    line-height: 0.4;
-  }
-} */
-
-.about-info h2 {
-  color: var(--text-color);
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.about-info p {
-  color: var(--text-color);
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
-
-@media (max-width: 768px) {
-  .about-content {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    /* Single column layout */
-  }
-
+.section{
+  width: 100%;
 }
