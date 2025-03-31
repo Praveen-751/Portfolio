@@ -3,7 +3,24 @@
   padding: 2rem;
   background-color: var(--secondary-color); /* Dark Blue */
   color: var(--text-color); /* Bright White */
+  height: fit-content;
 }
+
+.edu-header{
+  /* background-color: var(--primary-color); */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  /* height: 50%; */
+  position: relative;
+}
+
+.icons{
+  width: 70%;  
+  margin: 0 1rem;
+}
+
 
 /* Flexbox layout for the sections */
 .edu-sections {
@@ -18,7 +35,7 @@
 .edu-sections {
   padding: 1rem; /* Reduce padding to decrease height */
   border-radius: 16px;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   height: 92vh; /* Default height based on content */
   min-height: 150px; /* Optional: Set a minimum height */
 }
@@ -66,8 +83,10 @@
   }
 }
 
-.icons{
-  height: 48px;
-  width: 48px;
-  margin: 0 1rem;
+/* Resposnive design for smaller screens */
+
+@media (max-width: 768px) {
+  .icons{
+    width: 90%;
+  }
 }

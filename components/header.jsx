@@ -50,22 +50,22 @@ const Header = () => {
               <ul className="nav-list">
                 <li className="nav-item">
                   <Link
-                    to="home"
-                    smooth={true}
-                    duration={500}
-                    onClick={() => setIsNavOpen(false)}
-                  >
-                    Home
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link
                     to="about"
                     smooth={true}
                     duration={500}
                     onClick={() => setIsNavOpen(false)}
                   >
                     About
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    to="education"
+                    smooth={true}
+                    duration={500}
+                    onClick={() => setIsNavOpen(false)}
+                  >
+                    Education
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -96,22 +96,46 @@ const Header = () => {
         <nav className="nav-close">
           <ul className="nav-list-close">
             <li className="nav-item">
-              <Link to="home" smooth={true} duration={500}>
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="about" smooth={true} duration={500}>
+              <Link
+                to="about"
+                smooth={true}
+                duration={500}
+                debug="true"
+                onClick={() => console.log("clicked")}
+              >
                 About
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="projects" smooth={true} duration={500}>
+              <Link
+                to="education"
+                smooth={true}
+                duration={500}
+                debug="true"
+                onClick={() => console.log("clicked")}
+              >
+                Education
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="projects"
+                smooth={true}
+                duration={500}
+                debug="true"
+                onClick={() => console.log("clicked")}
+              >
                 Projects
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="contact" smooth={true} duration={500}>
+              <Link
+                to="contact"
+                smooth={true}
+                duration={500}
+                debug="true"
+                onClick={() => console.log("clicked")}
+              >
                 Contact
               </Link>
             </li>

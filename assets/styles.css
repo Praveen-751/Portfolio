@@ -72,7 +72,7 @@ a:hover {
 .scroll-container {
     height: 100vh; /* Full viewport height */
     overflow-y: scroll; /* Enable vertical scrolling */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; /* Hide horizontal scrolling */
     scroll-behavior: smooth; /* Smooth scrolling */
     display: flex;
     flex-direction: column;
