@@ -27,7 +27,7 @@ const Education = () => {
               <p>August 2022 - May 2024</p>
               <p>GPA: 3.5</p>
 
-              <p style={{ marginTop: "10px" }}>Relevant Coursework</p>
+              <p style={{ marginTop: "10px" }}>Relevant Coursework :</p>
               <p>
                 Design Analysis and Algorithms, Advanced Database Design,
                 Software Engineering
@@ -52,10 +52,14 @@ const Education = () => {
                 <img className="icons" src="certified.svg" alt="svg icon" />
               </div>
               <h2>Certifications</h2>
-              <p>Google Cloud Certification for completing Cloud Engineer
-                and Data Science and Machine Learning tracks</p>
               <p>
-                LinkedIn Learning Certification for completing JavaScript Essential Training
+                Google Cloud Certification for completing Cloud Engineer and
+                Data Science and Machine Learning tracks
+              </p>
+              <br></br>
+              <p>
+                LinkedIn Learning Certification for completing JavaScript
+                Essential Training
               </p>
             </div>
           </section>
