@@ -1,85 +1,153 @@
 /* Main container for the edu section */
 .edu-main {
-  padding: 2rem;
+  /* padding: 2rem; */
   background-color: var(--secondary-color); /* Dark Blue */
   color: var(--text-color); /* Bright White */
   height: fit-content;
 }
 
 .edu-header{
-  /* background-color: var(--primary-color); */
   display: flex;
+  padding: 0 2rem;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  /* height: 50%; */
   position: relative;
 }
 
 .icons{
-  width: 70%;  
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.heading{
+  font-size: 2.5rem;
+  color: var(--secondary-color) !important; /* Neon Pink */
+  text-align: center;
   margin: 0 1rem;
 }
 
+
+.edu-sections {
+  /* padding: 1rem; */
+  border-radius: 16px;
+  /* background-color: var(--primary-color); */
+  min-height: 150px; /* Optional: Set a minimum height */
+}
 
 /* Flexbox layout for the sections */
 .edu-sections {
   display: flex;
   flex-direction: column; /* Stack sections vertically */
-  gap: 2rem; /* Add spacing between sections */
+  /* height: max-content; */
   align-items: center;
   justify-content: space-around;
 }
 
-/* Individual section styling */
-.edu-sections {
-  padding: 1rem; /* Reduce padding to decrease height */
-  border-radius: 16px;
-  /* background-color: var(--primary-color); */
-  height: 92vh; /* Default height based on content */
-  min-height: 150px; /* Optional: Set a minimum height */
+.header-icons{
+  width: 60%;
 }
+
+.background{
+  background-color: var(--primary-color);
+  height: 400px;
+  width: 100%;
+  padding: 0px;
+  position: relative;
+}
+
+.content-heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+
+.content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  /* padding: 0 2rem; */
+  background-color: var(--secondary-color);
+  bottom: 100;
+  border-radius: 10px;
+  width: 90%;
+  height: 90vh;
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
 
 /* Specific styles for each section */
 .education,
-.experience,
 .certifications {
-  height: 90%;
-  min-width: 30%;
+  height: 100%;
+  min-width: 33.33%;
   background-color: #fff; /* Set a specific height for the education section */
-  border-radius: 10% 5%;
-  /* box-shadow: 10px 5px var(--accent-color);  */
-  border: 2px var(--primary-color) solid;
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Neon Pink */
+
+}
+
+.education{
+  border-radius: 10px 0px 0px 10px;
+}
+
+.certifications{
+  border-radius: 0px 10px 10px 0px;
+}
+
+.experience {
+  height: 100%;
+  min-width: 33.33%;
+  background-color: #fff; /* Set a specific height for the experience section */
 }
 
 .content-inside {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   height: 100%;
   width: 100%;
   padding: 2rem;
+  text-align: center;
 }
 
-.content-inside h2 {
+.content-inside h2, .content-heading h2 {
   font-size: 1.8rem;
-  color: var(--highlight-color); /* Neon Pink */
+  color: var(--text-color); /* Neon Pink */
+  text-decoration: bold ;
   margin-bottom: 1rem;
 }
 
-.content-inside p {
+.content-inside p, .content-heading p {
   font-size: 1.2rem;
   color:
    var(--text-color); /* Bright White */
 }
 
+
+.image-inside{
+  height: 100px;
+  width: 100px;
+  margin: 1rem;
+  border-radius: 100%;
+  background-color: var(--accent-color);
+}
+
 /* Responsive layout for larger screens */
 @media (min-width: 768px) {
   .edu-sections {
-    flex-direction: row; /* Arrange sections side by side */
+    flex-direction: column; /* Arrange sections side by side */
     justify-content: space-around;
   }
 
   .edu-sections {
     flex: 1; /* Make sections equal width */
-    margin: 0 1rem; /* Add spacing between sections */
   }
 }
 
@@ -87,6 +155,31 @@
 
 @media (max-width: 768px) {
   .icons{
-    width: 90%;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .content{
+    height: auto;
+  }
+
+  .education{
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .certifications{
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .edu-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content{
+    flex-direction: column; /* Stack sections vertically */
+    justify-content: center;
+    align-items: center;
   }
 }
