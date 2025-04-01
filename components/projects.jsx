@@ -7,7 +7,7 @@ const Projects = () => {
     <div className="projects-main">
       <h1 className="projects-heading"> My Recent Projects Including Full Stack and Machine Learning</h1>
       <div className="cards-section">
-        <Cards />
+              <Cards props={'Shot_1.jpeg'} text={"Skin Detection System"} />
         <Cards />
         <Cards />
         <Cards />
