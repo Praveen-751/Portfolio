@@ -1,19 +1,43 @@
 .projects-main{
-    height: 500px;
+    height: 90vh;
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 20px;
     align-items: center;
-    justify-content: space-around;
-    flex-basis: 1;
+    justify-content: space-evenly;
     background-color: var(--secondary-color);
 }
 
-.projects-heading{
+.project-heading{
     color: var(--text-color);
-    font-size: 24px;
     font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    padding: 10px;
+    text-align: center;
+    z-index: 10;
+}
+
+.projects-header{
+    /* background-color: var(--primary-color); */
+    width: 100%;
+    height: 10%;
+    margin-bottom: 1rem;
+}
+
+.projects-header p{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    text-align: center;
+    z-index: 10;
+    padding: 10px;
+}
+
+.highlight{
+    color: var(--primary-color) !important;
+    /* font-weight: bold; */
+    font-size: 1.5rem;
+    padding: 10px;
 }
 
 .cards-section{
@@ -21,7 +45,78 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    height: 100%;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
+    flex-wrap: wrap;
+    z-index: 10;
+    gap: 20px;
+    margin-bottom: 1rem;
+}
+
+.cards-section-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70%;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+    .projects-main{
+        height: auto;
+    }
+    .projects-header{
+        padding: 0px 30px;
+    }
+    .project-heading{
+        font-size: 2rem;
+    }
+    .cards-section{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .cards-section-1{
+        height: 100%;
+    }
+
+    .project-heading h1{
+        font-size: 1.5rem;
+    }
+    .projects-header p{
+        font-size: 1.5rem !important;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    .projects-main{
+        height: auto;
+    }
+    .projects-header{
+        padding: 0px 30px;
+    }
+    .project-heading{
+        font-size: 2rem;
+    }
+    .cards-section{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .cards-section-1{
+        height: 100%;
+    }
+
+    .project-heading h1{
+        font-size: 1.5rem;
+    }
+    .projects-header p{
+        font-size: 1.5rem !important;
+    }
+
+
 }

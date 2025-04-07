@@ -8,7 +8,7 @@ import Header from "@/components/header";
 export default function Home() {
   return (
     <div className="scroll-container" style={{position: "relative",overflow_y: "auto"}}>
-      <Header />
+      {/* <Header /> */}
       <Main />
       {/* <About /> */}
     </div>
