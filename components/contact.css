@@ -41,12 +41,17 @@
 }
 
 .icon-div:hover{
-    background-color: var(--secondary-color); /* Use the secondary color for the background */
+    background-color: var(--secondary-color); 
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.icon-div:hover .img path{
-    fill: var(--primary-color);
-    transition: fill 0.3s ease; 
+.contact-icon{
+    stroke: #ffffff;
+    transition: stroke 0.3s ease;
+}
+
+.icon-div:hover .contact-icon{
+    stroke: var(--primary-color); 
+    transition: stroke 0.3s ease;
 }
