@@ -5,10 +5,11 @@ import Cards from "./cards";
 const Projects = () => {
   return (
     <div className="projects-main">
-      <h1 className="projects-heading">
-        {" "}
-        My Recent Projects Including Full Stack and Machine Learning
-      </h1>
+      <div className="projects-header">
+        <h1 className="project-heading"> My Recent Work </h1>
+        <p>I've contributed in multiple projects in different domains which aligns to my course work, that includes </p>
+        <p className="highlight">Image Processing, Machine Learning, Data Science, Web Development and more.</p>
+      </div>
       <div className="cards-section">
         <Cards
           props={"Skin_Diesease.png"}

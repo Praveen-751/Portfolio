@@ -1,6 +1,6 @@
 .cards-main {
-  height: 320px;
-  width: 450px;
+  height: 300px;
+  width: 420px;
   box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   position: relative;
@@ -47,6 +47,7 @@
   transform: scale(0.5);
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   border-radius: 10px;
+  padding: 10px;
 }
 
 .cards-content:hover .cards-image {
@@ -78,13 +79,40 @@
 
 @media (max-width: 768px) {
   .cards-main {
-    width: 80%;
-    height: 200px;
+    width: 70%;
+    height: 300px;
   }
   .cards-text {
     font-size: 1.5rem;
   }
   .cards-button {
     font-size: 0.8rem;
+  }
+}
+
+@media ((max-width: 1024px) and (min-width: 769px)) {
+  .cards-main {
+    width: 40%;
+    height: 240px;
+  }
+  .cards-text {
+    font-size: 1.2rem;
+  }
+  .cards-button {
+    font-size: 0.7rem;
+  }
+}
+
+
+@media (max-width: 468px) {
+  .cards-main {
+    width: 90%;
+    height: 240px;
+  }
+  .cards-text {
+    font-size: 1rem;
+  }
+  .cards-button {
+    font-size: 0.7rem;
   }
 }
